@@ -57,7 +57,12 @@ export const register: Register = on => {
   })
 
   // SessionMode 画在 prompt footer 右侧（模式标签的位置）——输入框下面、靠右下
+  // 仅终端生效：desktop 等其他 surface 不画，交还引擎
   on('ui.render', { component: 'SessionMode' }, async ($, e, next) => {
+    if (e.surface !== 'terminal') {
+      return next(e)
+    }
+
     const ctx = await read($, usage)
 
     if (ctx === null) {
