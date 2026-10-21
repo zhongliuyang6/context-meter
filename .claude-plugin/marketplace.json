@@ -1,0 +1,6 @@
+{
+  "name": "zhongliuyang-mods",
+  "description": "zhongliuyang 的 Claude Code mod 集合（当前含 context-meter：输入框下方右下角的上下文用量进度条）",
+  "owner": { "name": "zhongliuyang" },
+  "plugins": [{ "name": "context-meter", "source": "./" }]
+}

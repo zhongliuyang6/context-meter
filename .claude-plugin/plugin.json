@@ -1,0 +1,7 @@
+{
+  "name": "context-meter",
+  "version": "0.1.0",
+  "description": "显示当前上下文长度：prompt 上方进度条 + 状态栏百分比",
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
